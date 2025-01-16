@@ -3,8 +3,8 @@
 测试系统:Armbian <br>
 依赖包:hostpd|dnsmasq|isc-dhcp-client|flask
 
-主要用于设备启动时没有网络下,将无线网卡设置为AP模式,进行配网流程.
-
+用于设备启动时没有网络下,将无线网卡设置为AP模式,进行配网流程.<br>
+默认SSID:Zero3AP  密码:123456789  认证页面:192.168.111.1
 ## 特点
 相对于单独安装OpenWRT,有armdbian更丰富的生态和可以使用WIFI.提高设备可玩性.<br>
 已测试:passwall2|wireguard|smartdns 都能正常工作.
