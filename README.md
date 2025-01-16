@@ -59,6 +59,7 @@ pip install Flask
 
 ****
 <p align="center">以下是个人使用的记录</p>
+
 ## 安装OpenWRT及设备网口使用DHCP
 安装流程主要参考[B站视频](https://www.bilibili.com/video/BV17m411f7Py/#reply250882781105)
 * 由于移动设备的特性,网口配置时用了DHCP.配置文件如下,有需要的可以参考
