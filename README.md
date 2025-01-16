@@ -1,13 +1,10 @@
 ## 香橙派zero3 wifi认证
-硬件:香橙派Zero3 1GB
+硬件:香橙派Zero3 1GB <br>
 测试系统:Armbian <br>
 依赖包:hostpd|dnsmasq|isc-dhcp-client|flask
 
-用于设备启动时没有网络下,将无线网卡设置为AP模式,进行配网流程.<br>
+用于设备启动时没有网络下，将无线网卡设置为AP模式，进行配网流程。提高设备可玩性，便携性<br>
 默认SSID:Zero3AP  密码:123456789  认证页面:192.168.111.1
-## 特点
-相对于单独安装OpenWRT,有armdbian更丰富的生态和可以使用WIFI.提高设备可玩性.<br>
-已测试:passwall2|wireguard|smartdns 都能正常工作.
 
 ## 使用说明
 一.环境准备
@@ -60,6 +57,8 @@ pip install Flask
 
 配网成功后,好像认证页面没有被关闭.
 
+****
+<p align="center">以下是个人使用的记录</p>
 ## 安装OpenWRT及设备网口使用DHCP
 安装流程主要参考[B站视频](https://www.bilibili.com/video/BV17m411f7Py/#reply250882781105)
 * 由于移动设备的特性,网口配置时用了DHCP.配置文件如下,有需要的可以参考
