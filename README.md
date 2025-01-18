@@ -18,11 +18,14 @@ apt-get install isc-dhcp-client
 git clone -b master https://github.com/RamenRa/CaptivePortal-Zero3.git && cd CaptivePortal-Zero3
 chmod +x sta_ap_switch.sh
 ```
+
+* 倒数第二行命令需要安装git，没有安装的可以手动下载项目(master分支)后进入其文件夹。
+
 二.安装Flask服务器
 
 `pip install Flask`
 
-如果提示`error: externally-managed-environment`可以有以下两个方式解决.
+* 如果提示`error: externally-managed-environment`可以有以下两个方式解决.
 
 2-1 创建新的python环境
 ```
