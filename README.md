@@ -1,7 +1,7 @@
 ## 香橙派zero3 wifi认证
 硬件:香橙派Zero3 1GB <br>
 测试系统:Armbian <br>
-依赖包:hostpd、dnsmasq、isc-dhcp-client、flask
+依赖包:hostapd、dnsmasq、isc-dhcp-client、flask
 
 用于设备启动时没有网络下，将无线网卡设置为AP模式，进行配网流程。提高设备可玩性，便携性<br>
 默认SSID:Zero3AP  默认密码:123456789  默认认证页面:192.168.111.1
