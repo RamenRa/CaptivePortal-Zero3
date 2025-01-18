@@ -1,17 +1,16 @@
 ## 香橙派zero3 wifi认证
 硬件:香橙派Zero3 1GB <br>
 测试系统:Armbian <br>
-依赖包:hostpd|dnsmasq|isc-dhcp-client|flask
+依赖包:hostpd、dnsmasq、isc-dhcp-client、flask
 
 用于设备启动时没有网络下，将无线网卡设置为AP模式，进行配网流程。提高设备可玩性，便携性<br>
-默认SSID:Zero3AP  密码:123456789  认证页面:192.168.111.1
+默认SSID:Zero3AP  默认密码:123456789  默认认证页面:192.168.111.1
 
 ## 使用说明
 一.环境准备
 ```
 sudo apt update
-apt install net-tools
-apt install hostapd dnsmasq
+apt install hostapd dnsmasq net-tools
 apt-get install isc-dhcp-client
 git clone -b master https://github.com/RamenRa/CaptivePortal-Zero3.git && cd CaptivePortal-Zero3
 chmod +x sta_ap_switch.sh
