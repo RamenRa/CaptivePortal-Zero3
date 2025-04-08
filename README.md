@@ -14,12 +14,10 @@
 ```
 sudo apt update
 apt install hostapd dnsmasq net-tools
-apt-get install isc-dhcp-client
+apt-get install isc-dhcp-client git
 git clone -b master https://github.com/RamenRa/CaptivePortal-Zero3.git && cd CaptivePortal-Zero3
 chmod +x sta_ap_switch.sh
 ```
-
-* 倒数第二行命令需要安装git，没有安装的可以手动下载项目(master分支)并进入其文件夹后再执行`chmod +x sta_ap_switch.sh`。
 
 二.安装Flask服务器
 
