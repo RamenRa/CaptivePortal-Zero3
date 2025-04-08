@@ -29,7 +29,7 @@ chmod +x sta_ap_switch.sh
 
 2-1 创建新的python环境
 ```
-sudo apt install python3-venv
+sudo apt install python3-venv -y
 python3 -m venv ./env 
 source ./env/bin/activate
 pip install Flask
@@ -47,9 +47,9 @@ pip install Flask
 
 `nano /etc/rc.local` # 在exit0之前添加以下 <br>
 2-1方法: <br>
-`/root/CaptivePortal-Zero3/env/bin/python3 /root/CaptivePortal-Zero3/main &` <br>
+`/root/CaptivePortal-Zero3/env/bin/python3 /root/CaptivePortal-Zero3/main.py &` <br>
 2-2方法: <br>
-`python3 /root/CaptivePortal-Zero3/main &`
+`python3 /root/CaptivePortal-Zero3/main.py &`
 * 自行注意目录是否正确.`pwd`查看当前目录
 * 脚本所在位置会生成两个日志,一个是脚本本身的和FLASK服务器的日志.
 * 只有开机时会检测网络,有网则退出,否则开启配网流程.其余时间断网不会进行配网.
