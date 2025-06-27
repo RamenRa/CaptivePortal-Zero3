@@ -199,23 +199,27 @@ def send_pushplus(title, content):
 
 
 def send_notification(title, content):
-    """发送通知，优先使用ServerChan"""
+    server_chan_flag = False
+    pushplus_flag = False
     # 首先尝试ServerChan
     if SERVERCHAN_TOKEN:
-        if send_serverchan(title, content):
+        server_chan_flag = send_serverchan(title, content)
+        if server_chan_flag and not Try_All_Chan:
             return True
 
     # 如果ServerChan失败或未配置，尝试PushPlus
     if PUSHPLUS_TOKEN:
-        if send_pushplus(title, content):
+        pushplus_flag = send_pushplus(title, content)
+        if pushplus_flag:
             return True
 
     # 如果都没有配置或全部失败
     if not SERVERCHAN_TOKEN and not PUSHPLUS_TOKEN:
         logging.warning("未配置任何通知Token，无法发送通知")
-    else:
-        logging.error("所有通知方式均失败")
-
+    elif not server_chan_flag:
+        logging.error("Server酱通知发送失败")
+    elif not pushplus_flag:
+        logging.error("pushplus_通知发送失败")
     return False
 
 
