@@ -179,7 +179,7 @@ def send_pushplus(title, content):
         data = {
             "title": title,
             "content": content,
-            "template": "html"
+            "template": "markdown"
         }
 
         response = requests.post(url, json=data)
