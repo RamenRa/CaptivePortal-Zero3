@@ -13,7 +13,7 @@ from pathlib import Path
 # 通知配置 - 请替换为您自己的token
 SERVERCHAN_TOKEN = ""  # 支持server3  sctpxxxxxxxxxxxxxxxxxxxx
 PUSHPLUS_TOKEN = ""   # 登陆PushPlus后，复制token
-Try_All_Chan = True   # 为True时，同时让Server3和PushPlus推送通知
+Try_All_Chan = True   # 为True时，同时让Server3和PushPlus推送通知。为False时，Server3成功，则不尝试PushPlus
 
 # 获取脚本所在目录
 SCRIPT_DIR = Path(__file__).parent.resolve()
