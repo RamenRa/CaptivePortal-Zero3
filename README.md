@@ -5,7 +5,7 @@
 默认SSID:Zero3AP  默认密码:123456789  默认认证页面:192.168.111.1
 
 用于设备启动时没有网络下，将无线网卡设置为AP模式，进行配网流程。提高设备可玩性，便携性<br>
-在main分支的ip_check.py可以检测`br0`网卡ip和名为`openwrt`的lxc容器的ip。发生变动时发送给Server<sup>3<sup>或者PushPlus
+在main分支的`ip_check.py`可以检测`br0`网卡ip和名为`openwrt`的lxc容器的ip。发生变动时发送给Server<sup>3</sup> 或者PushPlus
 
 * 欢迎各位进行使用、测试，如果对linux网络和flask熟悉的朋友们欢迎提交新的想法。
 
