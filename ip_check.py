@@ -8,7 +8,7 @@ import json
 import requests
 import re
 from pathlib import Path
-# 脚本使用`chomod +x 脚本名称` 给脚本添加可执行权限。在`/etc/rc.local`文件写入python "脚本绝对路径"即可。或使用其他开机启动方式
+# 脚本使用`chomod +x 脚本名称` 给脚本添加可执行权限。在`/etc/rc.local`文件写入python "脚本绝对路径" & 即可记得加& 后台执行。或使用其他开机启动方式
 
 # 通知配置 - 请替换为您自己的token
 SERVERCHAN_TOKEN = ""  # 支持server3  sctpxxxxxxxxxxxxxxxxxxxx
